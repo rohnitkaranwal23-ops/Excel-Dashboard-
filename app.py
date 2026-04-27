@@ -134,7 +134,7 @@ if "cluster_drilldown" not in st.session_state:
 # Load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_excel("drdo_100_employees_dataset excel 2.xlsx", engine="openpyxl")
+    df = pd.read_excel("drdo_data.xlsx", engine="openpyxl")
     df.columns = df.columns.str.strip()
     return df
 
